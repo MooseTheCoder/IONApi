@@ -36,6 +36,7 @@ class IONApi{
             'grant_type'=>'authorization_code'
         ])['access_token'];
         $this->IONToken = $AuthToken;
+        return $AuthToken;
     }
 
     public function Token($AuthToken){
